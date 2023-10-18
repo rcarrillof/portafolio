@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## Instalación
+
+Para instalar las dependencias del proyecto, utiliza el siguiente comando:
+
+```bash
+npm install
+
+## Para iniciar el proyecto 
+npm star
+
+meterse en la carpeta "servidor" y ejecutar el comando 
+
+node server.js
+
+a disfrutar!! :D

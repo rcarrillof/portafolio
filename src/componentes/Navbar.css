@@ -1,0 +1,54 @@
+.Navbar {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0; position: sticky;
+  top: 0; /* La barra de navegación se pegará en la parte superior */
+  z-index: 1000;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 1;
+}
+
+.Navbar li {
+  margin-right: 20px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.Navbar a:hover {
+  color: gray;
+}
+
+.Nombre {
+  color: white;
+  font-weight: bold;
+  margin-left: 3px;
+  cursor: default;
+  user-select: none;
+ /*  font-family: 'Yuji Hentaigana Akari', cursive; */
+}
+
+.Nombre span {
+  padding-right: 10px;
+  padding-left: 6px;
+  font-size: 10px; 
+   font-family: 'Yuji Hentaigana Akari', cursive;
+  color: #ccc; /* Color del texto del span */
+  cursor: default;
+  user-select: none;
+
+}

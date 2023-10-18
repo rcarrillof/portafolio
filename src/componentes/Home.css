@@ -1,0 +1,49 @@
+/* Home.css */
+/* 
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  height: 100vh;
+} */
+
+.palmera {
+  width: 300px;
+  height: auto;
+  margin-left: auto; /* Ajusta el margen izquierdo para mover la imagen a la derecha */
+}
+.home-container {
+  flex-grow: 1;
+}
+
+/* 
+.profile-section,
+.skills-section {
+  padding: 20px; 
+}
+
+.profile-info {
+  text-align: left; 
+}
+
+.name {
+  font-size: 2em; 
+}
+
+.job-title {
+  font-size: 1.5em; 
+}
+
+.skills-section {
+  text-align: left; 
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+li {
+  margin-bottom: 5px; 
+}
+ */

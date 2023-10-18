@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './App.css';
+import Home from './componentes/Home';
+import Proyectos from './componentes/Proyectos';
+import Contacto from './componentes/Contacto';
+import './componentes/transition.css';
+
+console.log('App Component: Renderizando...');
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="Container_principal">
+      <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          classNames="fade"
+          timeout={300}
         >
-          Learn React
-        </a>
-      </header>
+          <Routes>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Proyectos" element={<Proyectos />} />
+            <Route path="/Contacto" element={<Contacto />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
     </div>
   );
 }

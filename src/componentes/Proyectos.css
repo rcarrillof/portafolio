@@ -1,0 +1,60 @@
+ .proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.card_p {
+  width: 100%; 
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card_p:hover {
+  transform: scale(1.05);
+}
+
+.proyecto-card {
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.proyecto-card h3 {
+  margin-bottom: 10px;
+}
+
+.proyecto-card p {
+  margin: 0;
+}
+
+.proyecto-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-top: 10px;
+}
+
+.card_p:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.card_p:hover .proyecto-card img {
+  transform: scale(1.1);
+}
