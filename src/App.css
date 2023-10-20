@@ -37,6 +37,12 @@ body {
   font-family: 'Arial', sans-serif;
   background: rgb(135, 182, 250);
   background: linear-gradient(143deg, rgba(135, 182, 250, 1) 0%, rgba(161, 134, 250, 1) 100%);
+  overflow: hidden; /* ocultar la barra de desplazamiento */
+  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 #root {

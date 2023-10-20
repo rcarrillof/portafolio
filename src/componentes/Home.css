@@ -8,7 +8,7 @@
 } */
 
 .palmera {
-  width: 300px;
+  width: 300px; /* 300*/
   height: auto;
   margin-left: auto; /* Ajusta el margen izquierdo para mover la imagen a la derecha */
 }
@@ -16,6 +16,9 @@
   flex-grow: 1;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 /* 
 .profile-section,
 .skills-section {
