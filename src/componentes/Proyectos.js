@@ -21,12 +21,13 @@ const Proyectos = () => {
         </div>
       </div>
 
-      <div className="card_p">
-        <div className="proyecto-card">
-          <h3>HTML, CSS, Bootstrap</h3>
-          <a href="https://github.com/rcarrillof/proyecto_angularRicardo" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+      <a href="https://github.com/rcarrillof/proyecto_angularRicardo" target="_blank" rel="noopener noreferrer">
+        <div className="card_p">
+          <div className="proyecto-card">
+            <h3>HTML, CSS, Bootstrap</h3>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };

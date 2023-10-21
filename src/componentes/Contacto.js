@@ -6,39 +6,37 @@ import linkedin from './img/linkedin.png';
 
 const Contacto = () => {
   return (
-    <div className="contactos-container">
-
-      <div className="card">
-        <div className="card-content">
-          <img src={fb} alt="logo facebook" className='Logo_fb' />
-          <a href="https://www.facebook.com/ricardo.carrillofonseca" target="_blank" rel="noopener noreferrer" className="link">
+    <section className="contactos-container">
+      <a href="https://www.facebook.com/ricardo.carrillofonseca" target="_blank" rel="noopener noreferrer" className="link">
+        <article className="card">
+          <div className="card-content">
+            <img src={fb} alt="Logo de Facebook" className='Logo_fb' />
             <h2>Facebook</h2>
             <p>Ricardo Carrillo Fonseca</p>
-          </a>
-        </div>
-      </div>
+          </div>
+        </article>
+      </a>
 
-      <div className="card">
-
-        <div className="card-content">
-          <img src={ig} alt="logo Instagram" className='Logo_ig' />
-          <a href='https://www.instagram.com/r_carrillo11/' target="_blank" rel="noopener noreferrer" className="link">
+      <a href='https://www.instagram.com/r_carrillo11/' target="_blank" rel="noopener noreferrer" className="link">
+        <article className="card">
+          <div className="card-content">
+            <img src={ig} alt="Logo de Instagram" className='Logo_ig' />
             <h2>Instagram</h2>
             <p>r_carrillo11</p>
-          </a>
-        </div>
-      </div>
+          </div>
+        </article>
+      </a>
 
-      <div className="card">
-        <div className="card-content">
-        <img src={linkedin} alt="logo linkedin" className='Logo_linkedin' />
-          <a href='https://www.linkedin.com/in/ricardo-carrillo-fonseca-081a641a2/' target="_blank" rel="noopener noreferrer" className="link">
-            <h2>linkedin</h2>
+      {/* <a href='https://www.linkedin.com/in/ricardo-carrillo-fonseca-081a641a2/' target="_blank" rel="noopener noreferrer" className="link"> */}
+        <article className="card">
+          <div className="card-content">
+            <img src={linkedin} alt="Logo de LinkedIn" className='Logo_linkedin' />
+            <h2>LinkedIn</h2>
             <p>Ricardo Carrillo Fonseca</p>
-          </a>
-        </div>
-      </div>
-    </div>
+          </div>
+        </article>
+      {/* </a> */}
+    </section>
   );
 };
 
